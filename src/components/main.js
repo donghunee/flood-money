@@ -2,8 +2,18 @@ import React from 'react';
 import Input from './input'
 import './main.css';
 import { Button } from 'react-bootstrap';
+import CountUp from 'react-countup';
 
 class Main extends React.Component {
+
+  state = {
+    start : 0,
+    end : 0
+  }
+
+  numberWithCommas = (x) => {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
 
     render() {
     
@@ -11,15 +21,15 @@ class Main extends React.Component {
     return(
       <div className="wrap">
         <span className="money-title">현재 금액</span><br />
-        <span className="money">{this.props.currentMoney}</span>
+        <span className="money"><CountUp separator="," duration={2} start={this.props.preMoney} end={this.props.currentMoney} />원</span>
         <div className="wrap-item">
           <div className="add">
             <span className="item-title">입금</span><br />
-            <span className="item-money">{this.props.plus}</span>
+            <span className="item-money">{this.numberWithCommas(this.props.plus)}원</span>
           </div>
           <div className="minus">
             <span className="item-title">출금</span><br />
-            <span className="item-money">{this.props.minus}</span>
+            <span className="item-money">{this.numberWithCommas(this.props.minus)}원</span>
           </div>
         </div>
         <div className="line" />

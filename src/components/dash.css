@@ -1,6 +1,6 @@
 .dash-wrap {
-  padding: 0 20px;
   margin-top:20px;
+  transition: 0.5s;
 }
 
 .dash-item {

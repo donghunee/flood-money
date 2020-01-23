@@ -1,53 +1,31 @@
 import React from 'react';
 import './dash.css';
 import { Button } from 'react-bootstrap';
-
+import DashItem from './dashItem'
 
 class Dash extends React.Component {
 
+  componentDidMount() {
+    console.log(this.props.item)
+  }
+
   render() {
+    const dashItem = this.props.item.map(({id,type,title,date,money}) => (
+      <DashItem
+        key = {id}
+        id = {id}
+        title = {title}
+        date = {date}
+        money = {money}
+        type = {type}
+        onRemove={this.props.onRemove}
+      />
+
+    ))
 
     return(
-      <div className="dash-wrap">
-        <div className="dash-item">
-          <div className="day">
-            01.23<br />
-            <span style={{color:"gray" ,fontWeight:100}}>12:35</span>
-          </div>
-          <div className="dash-content">
-            <span className="dash-title">1인분 장보기 (고기)1인분 장보기 (고기)1인분 장보기 (고기)1인분 장보기 (고기)</span><br />
-            <span className="dash-money" style={{fontSize:19}}>- 12,000원</span>
-          </div>
-          <div className="close-wrap">
-           <i style={{fontSize:25}} className="icon close ion-md-close"></i>
-          </div>
-        </div>
-        <div className="dash-item">
-          <div className="day">
-            01.23<br />
-            <span style={{color:"gray" ,fontWeight:100}}>12:35</span>
-          </div>
-          <div className="dash-content">
-            <span className="dash-title">전체 회비 모음</span><br />
-            <span style={{fontSize:19, color:"blue"}}>+ 12,000원</span>
-          </div>
-          <div className="close-wrap">
-           <i style={{fontSize:25}} className="icon close ion-md-close"></i>
-          </div>
-        </div>
-        <div className="dash-item">
-          <div className="day">
-            01.23<br />
-            <span style={{color:"gray" ,fontWeight:100}}>12:35</span>
-          </div>
-          <div className="dash-content">
-            <span className="dash-title">1인분 장보기 (고기)1인분 장보기 (고기)1인분 장보기 (고기)1인분 장보기 (고기)</span><br />
-            <span style={{fontSize:19}}>- 12,000원</span>
-          </div>
-          <div className="close-wrap">
-           <i style={{fontSize:25}} className="icon close ion-md-close"></i>
-          </div>
-        </div>
+      <div className="dash-wrap" style={{borderTop:this.props.item.length == 0?"none":"1px solid gray"}}>
+        {dashItem}
       </div>
     )
   }
