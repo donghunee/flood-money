@@ -1,0 +1,55 @@
+.wrap {
+  text-align: start;
+  padding: 0 20px;
+}
+
+.money-title {
+  font-size: 20px;
+  color: gray;
+}
+
+.money {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.line {
+  margin-top:15px;
+  height: 1px;
+  background: gray;
+}
+
+.wrap-item {
+  margin-top: 13px;
+  width: 100%;
+  display: flex;
+}
+
+.add {
+  width: 50%;
+}
+
+.minus {
+  width: 50%;
+}
+
+.item-title {
+  color: gray;
+  font-size: 13px;
+}
+
+.plus-button {
+  width:50%;
+  font-size:30px !important;
+  border-radius: 0 !important;
+}
+
+.minus-button {
+  width:50%;
+  font-size:30px !important;
+  border-radius: 0 !important;
+}
+
+.memo-button {
+  width:20%;
+}
