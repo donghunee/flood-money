@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/flood-money/precache-manifest.ce5c6e5136c7342a1cd3593e58810d6e.js"
+  "/flood-money/precache-manifest.8a432fe00e4e07c74a96b0cb74d59aa3.js"
 );
 
 self.addEventListener('message', (event) => {
