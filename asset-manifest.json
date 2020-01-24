@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/flood-money/static/css/main.53ad746f.chunk.css",
+    "main.js": "/flood-money/static/js/main.ab93d876.chunk.js",
+    "main.js.map": "/flood-money/static/js/main.ab93d876.chunk.js.map",
+    "runtime-main.js": "/flood-money/static/js/runtime-main.994f8c84.js",
+    "runtime-main.js.map": "/flood-money/static/js/runtime-main.994f8c84.js.map",
+    "static/css/2.17e5ed98.chunk.css": "/flood-money/static/css/2.17e5ed98.chunk.css",
+    "static/js/2.093afb8a.chunk.js": "/flood-money/static/js/2.093afb8a.chunk.js",
+    "static/js/2.093afb8a.chunk.js.map": "/flood-money/static/js/2.093afb8a.chunk.js.map",
+    "index.html": "/flood-money/index.html",
+    "precache-manifest.585ac7e94f5e689669b054dead0264dd.js": "/flood-money/precache-manifest.585ac7e94f5e689669b054dead0264dd.js",
+    "service-worker.js": "/flood-money/service-worker.js",
+    "static/css/2.17e5ed98.chunk.css.map": "/flood-money/static/css/2.17e5ed98.chunk.css.map",
+    "static/css/main.53ad746f.chunk.css.map": "/flood-money/static/css/main.53ad746f.chunk.css.map",
+    "static/js/2.093afb8a.chunk.js.LICENSE": "/flood-money/static/js/2.093afb8a.chunk.js.LICENSE",
+    "static/media/logo.svg": "/flood-money/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.994f8c84.js",
+    "static/css/2.17e5ed98.chunk.css",
+    "static/js/2.093afb8a.chunk.js",
+    "static/css/main.53ad746f.chunk.css",
+    "static/js/main.ab93d876.chunk.js"
+  ]
+}
