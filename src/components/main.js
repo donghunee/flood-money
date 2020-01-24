@@ -21,7 +21,7 @@ class Main extends React.Component {
     return(
       <div className="wrap">
         <span className="money-title">현재 금액</span><br />
-        <span className="money"><CountUp separator="," duration={2} start={this.props.preMoney} end={this.props.currentMoney} />원</span>
+        <span className="money"><CountUp separator="," duration={1} start={this.props.preMoney} end={this.props.currentMoney} />원</span>
         <div className="wrap-item">
           <div className="add">
             <span className="item-title">입금</span><br />
