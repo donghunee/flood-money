@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f406bc89db59b87e0955faa61f3c0a46",
+    "revision": "6e8f036e3d6456fe6a4092359a8d6bf9",
     "url": "/flood-money/index.html"
   },
   {
