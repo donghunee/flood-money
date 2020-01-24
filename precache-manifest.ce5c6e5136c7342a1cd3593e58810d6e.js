@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d49cdfe8a64350137d7ea233f9156d00",
+    "revision": "a9433d632dd23eee4d07fad6d028205c",
     "url": "/flood-money/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/flood-money/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "a8f958efe0ef9c9c73c9",
+    "revision": "b60b34cb79019a8a0fe0",
     "url": "/flood-money/static/css/main.53ad746f.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/flood-money/static/js/2.093afb8a.chunk.js.LICENSE"
   },
   {
-    "revision": "a8f958efe0ef9c9c73c9",
-    "url": "/flood-money/static/js/main.92d8078c.chunk.js"
+    "revision": "b60b34cb79019a8a0fe0",
+    "url": "/flood-money/static/js/main.b392f936.chunk.js"
   },
   {
     "revision": "3b8cc44cb2a073995c2f",
