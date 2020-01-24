@@ -78,7 +78,7 @@ class App extends React.Component {
   render() {
     return(
       <div style={{textAlign:"center"}}>
-        <img src="./flood.png" width="30%" />
+        <img src="https://flood-master.s3.ap-northeast-2.amazonaws.com/59145380.png" width="30%" />
         <Main 
           active={this.state.active} 
           handleSubmit = {this._handleSubmit}
