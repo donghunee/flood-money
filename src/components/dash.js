@@ -1,6 +1,5 @@
 import React from 'react';
 import './dash.css';
-import { Button } from 'react-bootstrap';
 import DashItem from './dashItem'
 
 class Dash extends React.Component {
@@ -15,7 +14,7 @@ class Dash extends React.Component {
         key = {id}
         id = {id}
         title = {title}
-        date = {date}
+        date = {new Date(date)}
         money = {money}
         type = {type}
         onRemove={this.props.onRemove}

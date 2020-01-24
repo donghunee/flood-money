@@ -8,9 +8,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends React.Component {
 
-  id = 0
+  
 
   state = {
+    id: 0,
     preMoney:0,
     currentMoney:0,
     plus:0,
@@ -20,18 +21,31 @@ class App extends React.Component {
     type: ""
   }
 
+  componentWillMount() {
+
+    let state = localStorage.getItem('state')
+    console.log(JSON.parse(state))
+    if( state != null){
+      this.setState(JSON.parse(state));
+    }
+  }
+
+  saveItem = () => {
+    localStorage.setItem('state',JSON.stringify(this.state))
+  }
+
   _handleClickMinus = () => {
     this.setState({
       type:"minus",
       active: !this.state.active
-    })
+    },this.saveItem)
   }  
 
   _handleClickPlus = () => {
     this.setState({
       type:"plus",
       active: !this.state.active
-    })
+    },this.saveItem)
   }  
 
   _handleRemove = (id) => {
@@ -42,7 +56,7 @@ class App extends React.Component {
       preMoney: this.state.currentMoney,
       currentMoney: result.type == "plus"? this.state.currentMoney - result.money : this.state.currentMoney + result.money,
       [result.type]: result.type == "plus"? this.state.plus - parseInt(result.money) : this.state.minus - parseInt(result.money)
-    });
+    },this.saveItem);
   }
   
   _handleSubmit = (info) => {
@@ -52,18 +66,13 @@ class App extends React.Component {
       [info.type] : info.type == "plus"? this.state.plus + parseInt(info.money) : this.state.minus + parseInt(info.money),
       active: false,
       item: [{
-        id: this.id++,
+        id: this.state.id++,
         title: info.memo,
         money: parseInt(info.money),
         type : this.state.type,
         date: new Date()
       }].concat(this.state.item)
-    })
-    console.log(this.state.item)
-  }
-
-  _image = () => {
-    return "dw"
+    },this.saveItem)
   }
 
   render() {
