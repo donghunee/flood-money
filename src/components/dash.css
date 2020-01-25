@@ -1,5 +1,5 @@
 .dash-wrap {
-  margin-top:20px;
+  margin-top: 20px;
   transition: 0.5s;
 }
 
@@ -31,7 +31,7 @@
 
 .dash-title {
   display: inline-block;
-  width:100%;
+  width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -39,7 +39,7 @@
 
 .close-wrap {
   height: 100%;
-  width:13%;
+  width: 13%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
