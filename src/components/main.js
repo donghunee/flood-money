@@ -15,9 +15,7 @@ class Main extends React.Component {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
 
-    render() {
-    
-
+  render() {
     return(
       <div className="wrap">
         <span className="money-title">현재 금액</span><br />
