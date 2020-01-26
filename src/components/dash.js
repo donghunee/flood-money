@@ -3,9 +3,7 @@ import "./dash.css";
 import DashItem from "./dashItem";
 
 class Dash extends React.Component {
-  componentDidMount() {
-    console.log(this.props.item);
-  }
+  componentDidMount() {}
 
   render() {
     const dashItem = this.props.item.map(({ id, type, title, date, money }) => (
